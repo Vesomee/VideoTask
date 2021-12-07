@@ -1,0 +1,65 @@
+.details {
+    font-family:Roboto;
+    margin:0 auto;
+}
+
+.bg {
+    height: 348px;
+
+    img {
+        width:100%;
+        height:100%;
+        filter: blur(3px);
+    }
+}
+
+.photo {
+    margin:-230px auto 0 auto;
+    display:block;
+    position:relative;
+    width: 180px;
+    height: 270px;
+}
+
+button {
+  padding: 15px 109px 15px 110px;
+  border-radius: 12px;
+  background-color: #2874f6;
+  border:0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin:30px auto;
+  display:block;
+  cursor:pointer;
+}
+
+.title {
+    margin: 30px auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #050505;
+}
+
+.plot {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #9e9e9e;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.rate {
+    text-align:center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffc200;
+}
+.votes {
+    text-align:center;
+  font-size: 12px;
+    color:#b7b7b7;
+}

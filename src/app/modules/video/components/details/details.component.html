@@ -1,0 +1,16 @@
+<section class="details">
+    <div *ngIf="video">
+        <div class="bg">
+            <img src="{{video.Poster}}" alt="img"/>
+        </div>
+        <img class="photo" src="{{video.Poster}}" alt="img"/>
+        <div class="title t-center">{{video.Title}}</div>
+        <p class="rate">{{video.imdbRating}}</p>
+        <p class="votes">{{video.imdbVotes}}</p>
+
+        <div class="title">Storyline</div>
+        <p class="plot">{{video.Plot}}</p>
+        
+        <button (click)="toggleWatchList()">{{isOnWatchList ? 'Remove from watchlist' : 'Add to watchlist'}}</button>
+    </div>
+</section>

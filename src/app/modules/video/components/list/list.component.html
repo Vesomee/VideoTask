@@ -1,0 +1,18 @@
+<input class="search" type="text" placeholder="Search" (keyup)="onSearch($event)"/>
+<select #videoTypes (change)="onVideoTypesOptionsChange(videoTypes.value)">
+    <option value="">--</option>
+    <option *ngFor="let item of videoTypesOptions" value="{{item.key}}">{{item.name}}</option>
+</select>
+<select #years (change)="onYearsOptionsChange(years.value)">
+    <option value="">--</option>
+    <option *ngFor="let item of yearsOptions"  value="{{item.key}}">{{item.name}}</option>
+</select>
+
+<div class="item" *ngFor="let item of items$ | async" (click)="goToDetails(item.imdbID)">
+    <img src="{{item.Poster}}" alt="img"/>
+    <div class="title">
+        {{item.Title}}
+
+        <span>{{item.Year}}</span>
+    </div>
+</div>
